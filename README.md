@@ -97,7 +97,7 @@ The analytical approach for this project was multi-faceted, focusing on turning 
 
 - **Data Source**: HR_Analytics.csv from Kaggle
 
-## Visualisations:
+## Visualizations:
 
 - HR Analytics Dashboard Overview (Key Metrics)
 
