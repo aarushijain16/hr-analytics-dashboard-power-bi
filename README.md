@@ -1,114 +1,170 @@
-# hr-analytics-dashboard-power-bi
-This project presents an in-depth analysis of employee attrition using a comprehensive HR analytics dashboard. By dissecting key demographic, job role, and tenure-related factors, this dashboard provides actionable insights to understand the drivers of employee turnover,  optimize retention strategies, and enhance overall workforce stability. 
+# HR Analytics & Employee Attrition Insights
+## *Power BI dashboard project focused on workforce stability, retention, and HR decision-making*
 
-# HR Analytics Dashboard: Understanding and Mitigating Employee Attrition
+# Overview
 
-## Executive Summary:
-This project conducts a comprehensive analysis of an HR analytics dashboard to dissect employee attrition patterns, evaluate key HR metrics, and uncover critical insights into workforce stability. The goal is to provide data-driven recommendations that prioritize retention strategies, enhance employee engagement, and inform targeted HR interventions. 
+This project demonstrates how HR data can be transformed into actionable insights to understand employee attrition and support data-driven retention strategies.
 
-## Problem Statement:
+Working with a publicly available HR dataset, I built an interactive Power BI dashboard to analyse attrition patterns across job roles, tenure, demographics, and compensation bands, helping HR teams identify high-risk segments.
 
-The primary objective was to transform raw HR data into actionable intelligence across key workforce areas:
+Using:
 
-- **Attrition Identification**: To precisely identify the most significant contributors to employee attrition across job roles, demographic segments (age, gender, education), and tenure.
-  
-- **HR Metric Evaluation**: To delve into crucial metrics such as overall attrition rate, average age, average salary, and average years at the company to guide strategic HR resource allocation.
-  
-- **Employee Behavioral Insights**: To understand the patterns of employee turnover based on various attributes, informing personalized retention strategies and tailored HR programs.
+- HR data cleaning and feature engineering
 
-## Data Sources and Engineering:
+- Attrition, tenure, and demographic analysis
 
-This project utilized a publicly available HR transactional dataset, HR_Analytics.csv, obtained from Kaggle, as depicted in the provided HR Analytics Dashboard. The dataset contains comprehensive employee information, including demographics, job roles, and employment history. Key metrics and breakdowns are derived from this underlying dataset.
+- Segmented workforce analysis through Power BI dashboards
 
-My data engineering process (as implemented within Power BI or a preceding data preparation step) involved:
+- KPI-driven HR reporting for decision-makers
 
-- **Data Acquisition**: Sourcing the publicly available HR dataset from Kaggle.
-  
-- **Data Cleaning and Preprocessing**: Handled missing values, identified and removed duplicate entries, and addressed potential outliers in numerical fields (e.g., salary, years at company) to ensure data integrity. Ensured consistent data types.
-  
-- **Feature Engineering**: Created new meaningful features and calculated key performance metrics from the raw HR data to support deeper analysis, including:
-  - Attrition Status (derived from employee records)
-  - Age Groups
-  - Salary Bands
-  - Tenure (Years at Company)
-  - Attrition Rate
-  - Count of Employees
+The goal was to help HR and leadership teams move from static reporting to insight-led workforce planning, enabling targeted interventions to reduce attrition and improve employee stability.
 
-## Methodology:
+# Business Problem
 
-The analytical approach for this project was multi-faceted, focusing on turning HR data into actionable business intelligence through the Power BI dashboard:
+Employee attrition directly impacts productivity, hiring costs, and organisational stability, yet HR teams often lack clarity on why employees leave.
 
-- **Exploratory Data Analysis (EDA)**: Performed initial data inspection and summarization within Power BI to understand the dataset's structure and quality.
-  
-- **Overall Attrition Analysis**: Calculated and visualized the total count of employees, the number of attritions, and the overall attrition rate. Summarized average age, salary, and years at company for the workforce.
-  
-- **Segmented Attrition Analysis**: Analyzed attrition distribution across different employee segments using Power BI's visualization capabilities:
-  
-  - **Attrition by Job Role**: Identified job roles with the highest attrition numbers.
-    
-  - **Attrition by Years at Company**: Examined attrition trends based on employee tenure, highlighting critical periods of turnover.
-    
-  - **Attrition by Demographics**: Analyzed attrition based on Education Field, Age Groups, Salary Bands, and Gender to pinpoint vulnerable segments.
-    
-- **Identification of High-Risk Groups**: Pinpointed specific employee groups exhibiting higher attrition rates based on the segmented analysis presented in the dashboard.
+Key challenges addressed:
 
-## Key Findings and Impact:
+- Limited visibility into attrition drivers across roles and demographics
 
-- **Overall Attrition**: The company faces a significant attrition rate of 16.1%, with 237 employees having left out of 1470. The average employee age is 37, average salary is 6.5K, and average tenure is 7.0 years.
-  
-- **Job Role Hotspots**: Laboratory Technicians (62) and Sales Executives (57) exhibit the highest numbers of attrition, indicating potential challenges specific to these roles. Research Scientists (47) and Sales Representatives (33) also show notable attrition.
-  
-- **Early Tenure Attrition**: Attrition is highest in the first year of employment (59 employees), followed by year 3 (43 employees), year 4 (26 employees) and year 2 (44 employees), suggesting potential issues with onboarding, initial role fit, or early career development. There's also a smaller peak around 10 years (18 employees).
-  
-- **Age Group Vulnerability**: The 26-35 age group (44 employees) shows the highest attrition, followed by the 36-45 age group (43 employees), potentially indicating mid-career dissatisfaction or external opportunities.
-  
-- **Education Field Impact**: Life Sciences (38%) and Medical (27%) account for a significant portion of attrition by education, followed by Marketing (15%) and Technical Degree (14%).
-  
-- **Salary Band Analysis**: Attrition is most prominent in the 'Upto 5k' salary band (116 employees), suggesting that compensation might be a factor for employees in lower salary brackets.
-  
-- **Gender Distribution**: Male attrition (150) is higher than female attrition (87) in absolute numbers.
+- Difficulty identifying high-risk employee segments early
 
-## Strategic Recommendations:
+- Reactive retention strategies instead of targeted interventions
 
-- **Targeted Retention for High-Attrition Job Roles**:
+- Over-reliance on aggregate metrics without segmentation
 
-  - Develop specific retention programs for Laboratory Technicians and Sales Executives, focusing on career progression opportunities, workload management, recognition programs, and skill development relevant to their roles.
+Key questions addressed:
 
-- **Enhance Onboarding and Early Career Support**:
+- Which roles and employee groups experience the highest attrition?
 
-  - Implement robust onboarding programs and mentorship initiatives for new hires, particularly during their first year, to improve integration and reduce early turnover.
-  - Conduct early-tenure check-ins to address challenges and provide support.
+- At what stage of tenure are employees most likely to leave?
 
-- **Address Mid-Career and Compensation Concerns**:
+- How do age, salary, education, and gender influence attrition?
 
-  - Investigate the underlying reasons for attrition in the 26-35 age group and the 'Upto 5k' salary band. This may involve reviewing compensation competitiveness, offering professional development, and promoting work-life balance initiatives.
+- Where should HR focus retention and engagement efforts?
 
-- **Education-Specific Interventions**:
+# Solution Approach
 
-  - Explore the specific drivers of attrition within Life Sciences and Medical education fields. Tailor retention efforts, such as specialized training, research opportunities, or competitive benefits packages, to address their unique needs.
+I designed an HR analytics dashboard in Power BI to translate raw employee data into decision-ready insights.
 
-- **Further Gender-Based Analysis**:
+🔹 Data Preparation & Feature Engineering
 
-  - While male attrition is higher, conduct qualitative analysis (e.g., exit interviews, surveys) to understand specific reasons for attrition across both genders to develop more nuanced retention strategies.
+- Cleaned and validated HR data for consistency and accuracy
 
-## Tools and Technologies:
+- Removed duplicates and handled missing values
 
-- **Data Visualization & Analysis**: Power BI
+- Engineered features such as:
 
-- **Data Source**: HR_Analytics.csv from Kaggle
+  - Attrition status
 
-## Visualizations:
+  - Age groups
 
-- HR Analytics Dashboard Overview (Key Metrics)
+  - Salary bands
 
-- Attrition by Job Role
+  - Years at company (tenure)
 
-- Attrition by Years at Company
+- Workforce counts and attrition rates
 
-- Attrition by Education
+🔹 Core HR Metrics & KPI Tracking
 
-- Attrition by Age
+- Calculated overall attrition rate, headcount, and exits
 
-- Attrition by Salary
+- Analysed average age, salary, and tenure across the workforce
 
-- Attrition by Gender
+- Designed high-level KPI cards for leadership overview
+
+🔹 Segmented Attrition Analysis
+
+- Attrition by job role
+
+- Attrition by years at company (tenure analysis)
+
+- Attrition by age group, education field, salary band, and gender
+
+- Identification of high-risk employee segments
+
+🔹 Dashboard Design for HR Decision-Making
+
+- Built interactive visuals to enable drill-downs
+
+- Designed the dashboard for HR managers, not analysts
+
+- Focused on clarity, segmentation, and actionability
+
+# Key Business Insights and Strategic Impact
+*(Translated for HR, people analytics, and leadership teams)*
+
+- Overall attrition stands at 16.1%, indicating a material workforce risk
+ → Retention must be a strategic priority, not an HR afterthought
+
+- Attrition is highest in the first year of employment
+ → Onboarding and early engagement are critical levers
+
+- Laboratory Technicians and Sales Executives show the highest attrition
+ → Role-specific retention strategies are required
+
+- Employees aged 26–35 are most likely to leave
+ → Mid-career development and growth opportunities matter
+
+- Lower salary bands experience disproportionately high attrition
+ → Compensation and value proposition gaps impact retention
+
+# Strategic Recommendations
+
+- Design role-specific retention programs for high-attrition job roles
+
+- Strengthen onboarding and early-tenure support frameworks
+
+- Conduct targeted compensation and growth reviews for vulnerable segments
+
+- Introduce tenure-based engagement interventions (first year, mid-career)
+
+- Use HR dashboards as a continuous monitoring tool, not a one-time report
+
+# Tools and Technologies
+
+- Power BI – data modelling, DAX measures, interactive dashboards
+
+- HR Dataset – publicly available Kaggle dataset (HR_Analytics.csv)
+
+# Why this Matters for HR & Leadership Teams
+
+This project shows how HR analytics can:
+
+- Identify attrition risks early
+
+- Enable targeted, data-driven retention strategies
+
+- Improve workforce stability and planning
+
+- Support leadership decisions with clear evidence
+
+Applicable to:
+
+- Corporate HR teams
+
+- People analytics functions
+
+- Workforce planning and retention initiatives
+
+- Mid- to large-scale organisations
+
+# 📌 Note
+
+This project uses a publicly available HR dataset.
+
+The focus of the repository is on insight generation, segmentation logic, and HR decision support, rather than raw data processing.
+
+# 💬 How I Can Help You
+
+If your organisation wants to:
+
+- Reduce employee attrition
+
+- Build HR dashboards for leadership
+
+- Identify high-risk workforce segments
+
+- Strengthen retention through data
+
+I can help design Power BI dashboards, HR analytics frameworks, and insight-driven retention strategies tailored to your workforce data.
